@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://bobohy01.github.io/tag/python/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://bobohy01.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-08-28T21:30:14+09:00</updated>
+  <id>https://bobohy01.github.io/tag/python/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Data Analysis | </title>
+  
+
+  
+    <subtitle>데이터 분석</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">(3) Jupyter Notebook 단축키</title>
+      <link href="https://bobohy01.github.io/python-keyshortcut" rel="alternate" type="text/html" title="(3) Jupyter Notebook 단축키" />
+      <published>2022-08-12T10:00:00+09:00</published>
+      <updated>2022-08-12T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/python-keyshortcut</id>
+      <content type="html" xml:base="https://bobohy01.github.io/python-keyshortcut">&lt;h1 id=&quot;1-모든-단축키-설명&quot;&gt;1. 모든 단축키 설명&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;모든 단축키를 확인 하는 방법은 2가지가 있습니다. 첫번째는 Help에서 Keyboard Shortcuts을 선택하는 방법이고, 두번째는 ESC를 눌러 셀이 파란색이 된 명령 모드(Command mode)에서 H를 누르는 방법입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_1.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Jupyter Notebook은 명령 모드 (Command Mode)와 편집 모드 (Edit Mode)가 있습니다. 따라서 단축키는 명령 모드 (Command Mode)와 편집 모드 (Edit Mode)에 따라 각각 사용할 수 있는 단축키가 설명되어 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_2.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2--명령-모드-command-mode&quot;&gt;2.  명령 모드 (Command Mode)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;명령 모드 (Command Mode)란 셀 추가, 복사, 삭제, 복원, 병합 등 셀 단위의 작업을 할 때 사용하는 모드입니다. 해당 모드는 ESC를 누르거나 마우스로 입력 프롬프트 주변을 클릭하면, 셀이 파란색으로 바뀌면서 명령 모드 (Command Mode)로 변경 됩니다. 셀이 파란색일 때, 명령 모드 (Command Mode) 단축키를 사용하시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_3.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;명령 모드 (Command Mode)에서 개인적으로 가장 많이 쓰는 단축키를 선택하면 다음과 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_4.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이 외에도 Jupyter Notebook에서 설명하는 모든 명령 모드 (Command Mode)의 단축키를 표로 정리하였습니다. Jupyter Notebook에선 영어로 나오지만 한국어로 번역해 놓았으니 필요하신 분은 참고하시길 바랍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_5.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-편집-모드-edit-mode&quot;&gt;3. 편집 모드 (Edit Mode)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;편집 모드 (Edit Mode)란 셀 실행, 선택한 코드 들여쓰기/내어쓰기, 주석처리 등 셀 내부의 코드나 텍스트를 편집하는 작업을 할 때 사용하는 모드입니다. 해당 모드는 명령 모드에서 ENTER를 누르거나 마우스로 셀 내부를 클릭하면, 셀이 초록색으로 바뀌면서 편집 모드 (Edit Mode)로 변경 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_6.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;편집 모드 (Edit Mode)에서 개인적으로 가장 많이 쓰는 단축키를 선택하면 다음과 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_7.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이 외에도 Jupyter Notebook에서 설명하는 모든 편집 모드 (Edit Mode)의 단축키를 표로 정리하였습니다. 필요하신 부분은 아래 표를 참고하여 사용하시길 바랍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py3_keyshort_8.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Python Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-install&quot;&gt; (1) Python 3 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-contents&quot;&gt; (2) Jupyter Notebook 목차 활성화 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-keyshortcut&quot;&gt; (3) Jupyter Notebook 단축키 &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">1. 모든 단축키 설명</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(2) Jupyter Notebook 목차 활성화</title>
+      <link href="https://bobohy01.github.io/python-contents" rel="alternate" type="text/html" title="(2) Jupyter Notebook 목차 활성화" />
+      <published>2022-08-10T10:00:00+09:00</published>
+      <updated>2022-08-10T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/python-contents</id>
+      <content type="html" xml:base="https://bobohy01.github.io/python-contents">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;목차 활성화를 위해 Nbextensions을 설치해야합니다. 명령프롬프트(CMD)에 아래 코드를 입력하여 Nbextensions 설치 및 활성화를 진행하세요. 아래 코드를 실행하고 나면, Jupyter Notebook 홈페이지에 Nbextensions가 생깁니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-CMD&quot;&gt;# extensions 설치
+pip install jupyter_contrib_nbextensions
+
+# Nbextensions 활성화
+jupyter contrib nbextension install --user
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;
+Nbextensions 탭에서 Table of Contents를 선택하면 목차를 활성화 할 수 있습니다.
+&lt;img src=&quot;\post_images\python\py2_nbextensions.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Python 3에서 Help 아래에 있는 목차 이모티콘을 클릭하면, 왼쪽에 Markdown 목차를 볼 수 있는 Contents 창이 생성됩니다. Markdown 목차를 통해 원하는 코드 위치로 이동할 수 있으므로 코드 작성 시 요긴하게 사용할 수 있습니다.
+&lt;img src=&quot;\post_images\python\py2_contents.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Python Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-install&quot;&gt; (1) Python 3 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-contents&quot;&gt; (2) Jupyter Notebook 목차 활성화 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-keyshortcut&quot;&gt; (3) Jupyter Notebook 단축키 &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(1) Python 3 설치</title>
+      <link href="https://bobohy01.github.io/python-install" rel="alternate" type="text/html" title="(1) Python 3 설치" />
+      <published>2022-08-08T10:00:00+09:00</published>
+      <updated>2022-08-08T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/python-install</id>
+      <content type="html" xml:base="https://bobohy01.github.io/python-install">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Python 3는 ANACONDA에 포함되어 있어, &lt;u&gt; &lt;a href=&quot;https://www.anaconda.com/products/distribution&quot; target=&quot;#&quot;&gt; ANACONDA 홈페이지&lt;/a&gt;&lt;/u&gt;에서 ANACONDA를 설치하면, 자동으로 Python 3가 설치됩니다. ANACONDA 사이트에서 다운로드 버튼을 클릭하여 설치 실행파일을 다운로드 받습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py1_ana.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ANACONDA 설치파일을 실행하여 Next 버튼을 눌러 설치를 시작합니다. License Agrement에서 I Agree를 눌러 설치를 진행합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py1_ana_install_1.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Select Installation Type에서 사용자 환경에 따라 권한을 설정한 후 Next를 눌러 설치를 진행합니다. Choose Install Location에서 ANACONDA가 설치될 경로를 지정한 후 Next를 클릭합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py1_ana_install_2.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Advanced Installation Options에서 ANACONDA 환경변수를 자동으로 설정할 수 있도록 선택해준 뒤 Install를 진행합니다. 설치가 완료되면 Next를 누릅니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py1_ana_install_3.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Dataspell를 설치할 수 있는 경로를 제공하는데 당장 필요하지 않으니 Next로 그냥 넘어갑니다. 마지막으로 Finish 버튼을 눌러 설치를 완료합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\python\py1_ana_install_4.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ANACONDA 설치가 끝나면 Jupyter notebook이 생성되는데, Python 3는 Jupyter notebook을 통해 사용합니다.
+&lt;img src=&quot;\post_images\python\py1_jupyter.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Python Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-install&quot;&gt; (1) Python 3 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-contents&quot;&gt; (2) Jupyter Notebook 목차 활성화 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./python-keyshortcut&quot;&gt; (3) Jupyter Notebook 단축키 &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

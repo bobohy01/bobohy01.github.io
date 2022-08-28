@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://bobohy01.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://bobohy01.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-08-28T21:30:14+09:00</updated>
+  <id>https://bobohy01.github.io/tag/codingtest/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Data Analysis | </title>
+  
+
+  
+    <subtitle>데이터 분석</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">(7) SQL 고득점 Kit - String, Date</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_6" rel="alternate" type="text/html" title="(7) SQL 고득점 Kit - String, Date" />
+      <published>2022-08-26T11:00:00+09:00</published>
+      <updated>2022-08-26T11:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_6</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_6">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;6-string-date&quot;&gt;6. String, Date&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-루시와-엘라-찾기&quot;&gt;(1) 루시와 엘라 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 이름이 Lucy, Ella, Pickle, Rogan, Sabrina, Mitty인 동물의 아이디와 이름, 성별 및 중성화 여부를 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_24.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름, SELECT에서 ANIMAL_ID, NAME, SEX_UPON_INTAKE 변수를 선택합니다. Lucy, Ella, Pickle, Rogan, Sabrina, Mitty 이름이 들어있는 동물을 찾기 위해 WHERE에서 IN 함수를 사용하여 데이터를 추출합니다. 그리고 ANIMAL_ID로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SEX_UPON_INTAKE&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;Lucy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;Ella&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;Pickle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;Rogan&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;Sabrina&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;Mitty&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-이름에-el이-들어가는-동물-찾기&quot;&gt;(2) 이름에 el이 들어가는 동물 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;보호소에 돌아가신 할머니가 기르던 개를 찾는 사람이 찾아왔습니다. 이 사람이 말하길 할머니가 기르던 개는 이름에 ‘el’이 들어간다고 합니다. 동물 보호소에 들어온 동물 이름 중, 이름에 “EL”이 들어가는 개의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 이름 순으로 조회해주세요. 단, 이름의 대소문자는 구분하지 않습니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_25.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름, SELECT에서 ANIMAL_ID, NAME 변수를 선택합니다. 이름에 EL이 있는 동물을 찾기 위해 LIKE에 “%EL%”을 작성하고, 개를 찾아야하므로 ANIMAL_TYPE을 DOG로 지정합니다. 그리고 NAME로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;%EL%&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;Dog&quot;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-중성화-여부-파악하기&quot;&gt;(3) 중성화 여부 파악하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;보호소의 동물이 중성화되었는지 아닌지 파악하려 합니다. 중성화된 동물은 SEX_UPON_INTAKE 컬럼에 ‘Neutered’ 또는 ‘Spayed’라는 단어가 들어있습니다. 동물의 아이디와 이름, 중성화 여부를 아이디 순으로 조회하는 SQL문을 작성해주세요. 이때 중성화가 되어있다면 ‘O’, 아니라면 ‘X’라고 표시해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_26.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름, SELECT에서 ANIMAL_ID, NAME, SEX_UPON_INTAKE 변수를 선택합니다. 이때 중성화의 값을 변경해야하기 때문에 CASE WHEN을 이용합니다. SEX_UPON_INTAKE가 “%Spayed%” 또는 “%Neutered%”인 경우 중성화 된 것이므로 “O”으로 변경하고, 그 외엔 “X”로 변경합니다. 그리고 ANIMAL_ID로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SEX_UPON_INTAKE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;%Spayed%&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;O&quot;&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SEX_UPON_INTAKE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;%Neutered%&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;O&quot;&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;X&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;중성화&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-오랜-기간-보호한-동물-2&quot;&gt;(4) 오랜 기간 보호한 동물 2&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;입양을 간 동물 중, 보호 기간이 가장 길었던 동물 두 마리의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 기간이 긴 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_27.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;먼저 보호소에 들어온 정보를 담고 있는 ANIMAL_INS 테이블과 입양 정보를 담고 있는 ANIMAL_OUTS 테이블을 병합합니다. FROM에 ANIMAL_INS을 넣고, JOIN에 ANIMAL_OUTS을 넣습니다. 이때 기준 변수는 ANIMAL_ID을 이용합니다. 보호 기간이 긴 순으로 조회해야 하기 때문에 DATEDIFF함수를 이용하여 날짜의 차이를 구합니다. 이를 ORDER BY에 넣어 오래된 동물 순으로 정렬한 후 2마리 동물을 추출하기 위해 LIMIT 2을 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DATEDIFF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-datetime에서-date로-데이터-변환&quot;&gt;(5) DATETIME에서 DATE로 데이터 변환&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ANIMAL_INS 테이블에 등록된 모든 레코드에 대해, 각 동물의 아이디와 이름, 들어온 날짜를 조회하는 SQL문을 작성해주세요. 이때 시각(시-분-초)을 제외한 날짜(년-월-일)만 보여주고, 결과는 아이디 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_28.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름, SELECT에서 ANIMAL_ID, NAME, DATETIME 변수를 선택합니다. 이때 날짜의 형식을 바꾸기 위해 DATE_FORMAT 함수를 이용합니다. DATE_FORMAT 함수에 DATETIME을 넣고 원하는 날짜 형식인 “%Y - %m - %d”을 입력합니다. 그리고 ANIMAL_ID로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DATE_FORMAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;%Y-%m-%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;날짜&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(6) SQL 고득점 Kit - JOIN</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_5" rel="alternate" type="text/html" title="(6) SQL 고득점 Kit - JOIN" />
+      <published>2022-08-26T10:00:00+09:00</published>
+      <updated>2022-08-26T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_5</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_5">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-join&quot;&gt;5. JOIN&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-없어진-기록-찾기&quot;&gt;(1) 없어진 기록 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;천재지변으로 인해 일부 데이터가 유실되었습니다. 입양을 간 기록은 있는데, 보호소에 들어온 기록이 없는 동물의 ID와 이름을 ID 순으로 조회하는 SQL문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_20.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;입양을 간 기록이 있는 데이터는 ANIMAL_OUTS이고, 보호소에 들어온 기록이 있는 데이터는 ANIMAL_INS이다. 이때 입양을 간 기록은 있는데 보호소에 들어온 기록이 없는 데이터를 찾아야하므로 ANIMAL_OUTS를 기준으로 조인을 해야한다. FROM에 ANIMAL_INS을 넣고 RIGHT JOIN에 ANIMAL_OUTS을 추가하면 오른쪽 데이터인 ANIMAL_OUTS을 기준으로 ANIMAL_INS 데이터가 병합된다. 이때 데이터의 결합을 위한 KEY 변수로 ANIMAL_ID를 이용한다. 여기서
+  ANIMAL_INS 데이터가 없는 동물을 찾아야하므로 WHERE에 A.ANIMAL_ID가 IS NULL인 것을 선택한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RIGHT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-있었는데요-없었습니다&quot;&gt;(2) 있었는데요 없었습니다&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;관리자의 실수로 일부 동물의 입양일이 잘못 입력되었습니다. 보호 시작일보다 입양일이 더 빠른 동물의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일이 빠른 순으로 조회해야합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_21.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;먼저 동물 보호소에 들어온 동물의 정보를 담은 ANIMAL_INS 테이블과 입양 보낸 동물의 정보를 담은 ANIMAL_OUTS 테이블을 병합합니다. FROM에 ANIMAL_INS을 넣고 JOIN에 ANIMAL_OUTS을 넣습니다. 그리고 둘을 병합할 때 사용할 KEY 변수인 ANIMAL_ID을 ON에 작성합니다. 보호시작일 보다 입양일이 더 빠른 동물을 찾기 위해 WHERE에 A.DATETIME &amp;gt; B.DATETIME을 작성하여 데이터를 추출하고, 보호 시작일 A.DATETIME로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-오랜-기간-보호한-동물-1&quot;&gt;(3) 오랜 기간 보호한 동물 1&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;아직 입양을 못 간 동물 중, 가장 오래 보호소에 있었던 동물 3마리의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_22.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;입양을 못 간 동물은 DATETIME이 NULL일 것이고, 보호소에 있는 정보는 모두 존재할 것입니다. 따라서 보호소에 들어온 정보를 담은 ANIMAL_INS 테이블를 기준으로 입양 보낸 동물의 정보를 담은 ANIMAL_OUTS 테이블을 병합합니다. FROM에 ANIMAL_INS을 넣고, LEFT JOIN에 ANIMAL_OUTS을 넣으면 왼쪽 데이터인 ANIMAL_INS을 기준으로 병합됩니다. 이때 기준 변수는 ANIMAL_ID을 이용합니다. 그 후 입양을 못간 동물을 찾아야하니 WHERE에 B.ANIMAL_ID IS NULL을 입력합니다. 그리고 A.DATETIME을 기준으로 정렬하고, 동물 3마리를 추출하기 위해 LIMIT 3을 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-보호소에서-중성화한-동물&quot;&gt;(4) 보호소에서 중성화한 동물&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;보호소에서 중성화 수술을 거친 동물 정보를 알아보려 합니다. 보호소에 들어올 당시에는 중성화되지 않았지만, 보호소를 나갈 당시에는 중성화된 동물의 아이디와 생물 종, 이름을 조회하는 아이디 순으로 조회하는 SQL 문을 작성해주세요. 이때 중성화를 거치지 않은 동물은 성별 및 중성화 여부에 Intact, 중성화를 거친 동물은 Spayed 또는 Neutered라고 표시되어있습니다.(SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_23.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;먼저 동물 보호소에 들어온 동물의 정보를 담은 ANIMAL_INS 테이블과 입양 보낸 동물의 정보를 담은 ANIMAL_OUTS 테이블을 병합합니다. FROM에 ANIMAL_INS을 넣고 JOIN에 ANIMAL_OUTS을 넣습니다. 그리고 둘을 병합할 때 사용할 KEY 변수인 ANIMAL_ID을 ON에 작성합니다. 그리고 보호소에 들어올 당시에는 중성화되지 않았지만, 보호소를 나갈 당시에는 중성화된 동물은 중성화 변수의 값이 다릅니다. 따라서, WHERE에 A.SEX_UPON_INTAKE와 B.SEX_UPON_OUTCOME가 같지 않은 데이터를 추출하고, A.ANIMAL_ID로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SEX_UPON_INTAKE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SEX_UPON_OUTCOME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(5) SQL 고득점 Kit - IS NULL</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_4" rel="alternate" type="text/html" title="(5) SQL 고득점 Kit - IS NULL" />
+      <published>2022-08-24T11:00:00+09:00</published>
+      <updated>2022-08-24T11:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_4</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_4">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-is-null&quot;&gt;4. IS NULL&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-이름이-없는-동물의-아이디&quot;&gt;(1) 이름이 없는 동물의 아이디&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중, 이름이 없는 채로 들어온 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_17.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 ANIMAL_ID를 선택합니다. 그 다음 NAME이 없는 동물을 찾아야하므로 WHERE에 NAME IS NULL을 입력합니다. 그리고 ANIMAL_ID이 오름차순으로 정렬되야하므로 ORDER BY ANIMAL_ID를 설정합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-이름이-있는-동물의-아이디&quot;&gt;(2) 이름이 있는 동물의 아이디&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중, 이름이 있는 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_18.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 ANIMAL_ID를 선택합니다. 그 다음 NAME이 있는 동물을 찾아야하므로 WHERE에 NAME IS NOT NULL을 입력합니다. 그리고 ANIMAL_ID이 오름차순으로 정렬되야하므로 ORDER BY ANIMAL_ID를 설정합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-null-처리하기&quot;&gt;(3) NULL 처리하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;입양 게시판에 동물 정보를 게시하려 합니다. 동물의 생물 종, 이름, 성별 및 중성화 여부를 아이디 순으로 조회하는 SQL문을 작성해주세요. 이때 이름이 없는 동물의 이름은 “No name”으로 표시해 주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_19.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 동물의 생물 종, 이름, 성별 및 중성화 여부를 아이디 순으로 조회해야하므로 SELECT에 ANIMAL_TYPE, NAME, SEX_UPON_INTAKE를 입력합니다. 이때 NAME이 NULL이면 “No name”을 입력해야하므로 IFNULL함수를 이용하여 NULL을 “No name”을 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IFNULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;No name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SEX_UPON_INTAKE&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(4) SQL 고득점 Kit - GROUP BY</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_3" rel="alternate" type="text/html" title="(4) SQL 고득점 Kit - GROUP BY" />
+      <published>2022-08-24T10:00:00+09:00</published>
+      <updated>2022-08-24T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_3</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_3">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-group-by&quot;&gt;3. GROUP BY&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-고양이와-개는-몇마리-있을까&quot;&gt;(1) 고양이와 개는 몇마리 있을까&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 고양이와 개가 각각 몇 마리인지 조회하는 SQL문을 작성해주세요. 이때 고양이를 개보다 먼저 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_13.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 개와 고양이 각각 몇마리인지 구해야하므로 GROUP BY를 이용하여 ANIMAL_TYPE을 구분합니다. 그 후 SELECT에서 COUNT함수를 통해 ANIMAL_TYPE별 동물의 수를 구합니다. 이때 ANIMAL_TYPE은 고양이부터 나와야 하므로 ORDER BY에 ANIMAL_TYPE을 입력하여 오름차순으로 정렬합니다. 그리고 결과 화면에서 변수명이 “COUNT”로 되어있기 때문에 SELECT에서 AS “COUNT”을 추가하여 변수명을 변경합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_TYPE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-동명-동물-수-찾기&quot;&gt;(2) 동명 동물 수 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 이름 중 두 번 이상 쓰인 이름과 해당 이름이 쓰인 횟수를 조회하는 SQL문을 작성해주세요. 이때 결과는 이름이 없는 동물은 집계에서 제외하며, 결과는 이름 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_14.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 먼저 이름이 없는 동물은 집계에서 제외해야하므로 WHERE에서 NAME IS NOT NULL을 입력합니다. 그 후 들어온 동물 중 이름이 2번 이상 쓰인 동물을 찾아야 하므로 동물 이름의 수를 구합니다. GROUP BY를 NAME로 하고 SELECT에서 COUNT함수를 사용하여 동물 이름의 수를 구합니다. 이때 2번이상 쓰인 동물만 추출해야하기 때문에 HAVING에서 COUNT &amp;gt;= 2라는 조건을 걸어줍니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-입양-시각-구하기-1&quot;&gt;(3) 입양 시각 구하기 1&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;보호소에서는 몇 시에 입양이 가장 활발하게 일어나는지 알아보려 합니다. 09:00부터 19:59까지, 각 시간대별로 입양이 몇 건이나 발생했는지 조회하는 SQL문을 작성해주세요. 이때 결과는 시간대 순으로 정렬해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_15.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 시간별 입양 건수를 구해야하므로 GROUP BY에 HOUR를 작성합니다. 이때 HOUR은 기존 테이블에 존재하지 않기 때문에 SELECT에서 HOUR함수를 사용하여 만들어 줍니다. 그리고 COUNT함수를 통해 시간대별 입양 건수를 구합니다. 그 후 시간이 9시부터 19시 59분까지라는 조건이 있으므로 HAVING에 HOUR(DATETIME) &amp;gt;= 9 AND HOUR(DATETIME) &amp;lt; 20 조건을 추가합니다. 마지막으로 ORDER BY에 HOUR를 추가하여 시간대별로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-입양-시각-구하기-2&quot;&gt;(4) 입양 시각 구하기 2&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;보호소에서는 몇 시에 입양이 가장 활발하게 일어나는지 알아보려 합니다. 0시부터 23시까지, 각 시간대별로 입양이 몇 건이나 발생했는지 조회하는 SQL문을 작성해주세요. 이때 결과는 시간대 순으로 정렬해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_16.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;해당 문제는 난이도가 높은 문제입니다. 먼저 시간을 0~23으로 설정하기 위해 SET에서 @HOUR이라는 변수에 초기값 -1을 지정합니다. 그리고 SELECT에서 “HOUR”라는 변수는 초기값 -1부터 계속 1을 더하는 형식인 @HOUR:=@HOUR+1을 사용하고, WHERE에서 마지막 값인 23을 넣어줍니다. 그러면 0부터 23까지 행이 만들어지게 됩니다. 다음으로 시간대별 COUNT를 구하려면 서브쿼리를 활용합니다. 서브쿼리는 WHERE에서 HOUR(DATETIME)가 @HOUR와 같을 때 COUNT함수를 통해 HOUR(DATETIME)의 갯수를 구합니다. 따라서 아래 코드를 실행하면, 앞서 만든 0~23행에 따라 각각 입양 건수를 구할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;HOUR&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;COUNT&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_OUTS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HOUR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_2" rel="alternate" type="text/html" title="(3) SQL 고득점 Kit - SUM &amp; MAX &amp; MIN" />
+      <published>2022-08-22T12:00:00+09:00</published>
+      <updated>2022-08-22T12:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_2</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_2">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-sum--max--min&quot;&gt;2. SUM &amp;amp; MAX &amp;amp; MIN&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-최댓값-구하기&quot;&gt;(1) 최댓값 구하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;가장 최근에 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_9.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 문제에서 가장 최근에 들어온 동물을 물어봤으므로 DATETIME가 가장 큰 동물을 찾아야합니다. 따라서 SELECT에서 MAX함수에 DATETIME를 입력합니다. 그리고 결과 화면에서 변수명이 “시간”으로 되어있기 때문에 SELECT에서 AS “시간”을 추가하여 변수명을 변경합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;시간&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-최솟값-구하기&quot;&gt;(2) 최솟값 구하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 가장 먼저 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_10.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 문제에서 가장 먼저 들어온 동물을 물어봤으므로 DATETIME가 가장 작은 동물을 찾아야합니다. 따라서 SELECT에서 MIN함수에 DATETIME를 입력합니다. 그리고 결과 화면에서 변수명이 “시간”으로 되어있기 때문에 SELECT에서 AS “시간”을 추가하여 변수명을 변경합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;시간&apos;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-동물-수-구하기&quot;&gt;(3) 동물 수 구하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 동물이 몇 마리 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_11.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 보호소에 동물이 몇마리 있는지 세야하므로 SELECT에서 COUNT함수를 이용합니다. 동물은 각각 개인의 고유한 ID를 갖기 때문에 COUNT함수에 ANIMAL_ID을 입력합니다. 그리고 결과 화면에서 변수명이 “COUNT”로 되어있기 때문에 SELECT에서 AS “COUNT”을 추가하여 변수명을 변경합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;COUNT&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-중복-제거하기&quot;&gt;(4) 중복 제거하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물의 이름은 몇 개인지 조회하는 SQL 문을 작성해주세요. 이때 이름이 NULL인 경우는 집계하지 않으며 중복되는 이름은 하나로 칩니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_12.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정합니다. 먼저, 이름이 NULL인 데이터를 제거하기 위해 WHERE에서 NAME IS NOT NULL을 입력합니다. 그 다음 보호소에 들어온 동물의 이름은 몇개인지 세야하므로 SELECT에서 COUNT함수를 이용합니다. 이때 NAME이 중복되지 않아야 하므로 DISTINCT 옵션을 추가합니다. 그리고 결과 화면에서 변수명이 “COUNT”로 되어있기 때문에 SELECT에서 AS “COUNT”을 추가하여 변수명을 변경합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(2) SQL 고득점 Kit - SELECT</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_1" rel="alternate" type="text/html" title="(2) SQL 고득점 Kit - SELECT" />
+      <published>2022-08-22T11:00:00+09:00</published>
+      <updated>2022-08-22T11:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_1</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_1">&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-select&quot;&gt;1. SELECT&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-모든-레코드-조회하기&quot;&gt;(1) 모든 레코드 조회하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 정보를 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_2.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 모든 변수를 의미하는 *을 입력합니다. 문제에서 ANIMAL_ID순으로 정렬하라고 했으니 ORDER BY에 ANIMAL_ID를 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-역순-정렬하기&quot;&gt;(2) 역순 정렬하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 ANIMAL_ID 역순으로 보여주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 NAME, DATETIME을 선택합니다. 문제에서 ANIMAL_ID의 역순으로 정렬하라고 했으니 ORDER BY에 ANIMAL_ID 옆에 DESC를 추가합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-아픈-동물-찾기&quot;&gt;(3) 아픈 동물 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 아픈동물은 INTAKE_CONDITION이 Sick이고, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_4.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 변수는 ANIMAL_ID와 NAME을 선택합니다. 문제에서 아픈동물을 찾으라고 했으니 WHERE에 INTAKE_CONDITION = ‘Sick’을 입력합니다. 그리고 ANIMAL_ID로 정렬하라고 했으니 ORDER BY에 ANIMAL_ID를 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INTAKE_CONDITION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;Sick&apos;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-어린-동물-찾기&quot;&gt;(4) 어린 동물 찾기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 젊은 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 젊은 동물은 INTAKE_CONDITION이 Aged가 아닌 경우를 뜻하며, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 변수는 ANIMAL_ID와 NAME을 선택합니다. 문제에서 젊은 동물을 찾으라고 했으니 WHERE에 INTAKE_CONDITION가 Aged가 아님을 의미하는 != 을 입력합니다. 그리고 ANIMAL_ID로 정렬하라고 했으니 ORDER BY에 ANIMAL_ID를 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INTAKE_CONDITION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Aged&apos;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-동물의-아이디와-이름&quot;&gt;(5) 동물의 아이디와 이름&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_6.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 변수는 ANIMAL_ID와 NAME을 선택합니다. 문제에서 ANIMAL_ID로 정렬하라고 했으니 ORDER BY에 ANIMAL_ID를 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-여러-기준으로-정렬하기&quot;&gt;(6) 여러 기준으로 정렬하기&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름, 보호 시작일을 이름 순으로 조회하는 SQL문을 작성해주세요. 단, 이름이 같은 동물 중에서는 보호를 나중에 시작한 동물을 먼저 보여줘야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_7.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 변수는 ANIMAL_ID,	NAME,	DATETIME을 선택합니다. 문제에서 NAME과 DATETIME으로 정렬하라고 했으니 ORDER BY 옆에 두 변수를 입력합니다. 이때 이름이 같은 경우 DATETIME이 더 큰 동물을 먼저 보여줘야 하므로 DATETIME에 DESC를 추가하여 내림차순으로 정렬합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-상위-n개-레코드&quot;&gt;(7) 상위 n개 레코드&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;문제 &amp;amp; 결과&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동물 보호소에 가장 먼저 들어온 동물의 이름을 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_8.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FROM에 테이블 이름을 지정하고, SELECT에서 변수는 NAME을 선택합니다. 문제에서 가장 먼저 들어온 동물의 이름을 조회하라고 했으니 ORDER BY에  DATETIME을 입력하여 오름차순으로 정렬합니다. 이때 첫 번째 행에 있는 동물이 가장 먼저 들어온 동물이므로 LIMIT 1을 입력하여 데이터를 추출합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ANIMAL_INS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;DATETIME&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">해당 문제는 프로그래머스(Programmers)사이트의 SQL 고득점 Kit 에서 제공됩니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(1) SQL 고득점 Kit 소개</title>
+      <link href="https://bobohy01.github.io/codingtest-pro_sql_0" rel="alternate" type="text/html" title="(1) SQL 고득점 Kit 소개" />
+      <published>2022-08-22T10:00:00+09:00</published>
+      <updated>2022-08-22T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/codingtest-pro_sql_0</id>
+      <content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_0">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;프로그래머스(Programmers)에서 Coding Test의 SQL 준비를 위해 예제 문제를 제공합니다. 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 풀 수있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_1.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;SQL 고득점 Kit에 있는 문제는 총 27문제로 SELECT 7문제, SUM &amp;amp; MAX &amp;amp; MIN 4문제, GROUP BY 4문제, IS NULL 3문제, JOIN 4문제, STRING &amp;amp; DATE 5문제가 제공됩니다. 해당 문제들의 난이도가 쉽기 때문에 금방 푸실 수 있을 것입니다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;번호&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;구분&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;문항수&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SELECT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SUM,MAX,MIN&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GROUP BY&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;IS NULL&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;JOIN&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;STRING, DATE&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; Coding Test Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_0&quot;&gt; (1) SQL 고득점 Kit 소개  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_1&quot;&gt; (2) SQL 고득점 Kit - SELECT  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_2&quot;&gt; (3) SQL 고득점 Kit - SUM &amp;amp; MAX &amp;amp; MIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_3&quot;&gt; (4) SQL 고득점 Kit - GROUP BY  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_4&quot;&gt; (5) SQL 고득점 Kit - IS NULL  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_5&quot;&gt; (6) SQL 고득점 Kit - JOIN  &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./codingtest-pro_sql_6&quot;&gt; (7) SQL 고득점 Kit - String, Date  &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;!--
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python Contents &lt;/span&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;.//python-basic&quot;&gt; (1) Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control&quot;&gt; (2) Python 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

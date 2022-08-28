@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://bobohy01.github.io/tag/mysql/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://bobohy01.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-08-28T21:30:14+09:00</updated>
+  <id>https://bobohy01.github.io/tag/mysql/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Data Analysis | </title>
+  
+
+  
+    <subtitle>데이터 분석</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">(2) My SQL 기본 (작성중)</title>
+      <link href="https://bobohy01.github.io/mysql-basics" rel="alternate" type="text/html" title="(2) My SQL 기본 (작성중)" />
+      <published>2022-08-25T10:00:00+09:00</published>
+      <updated>2022-08-25T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/mysql-basics</id>
+      <content type="html" xml:base="https://bobohy01.github.io/mysql-basics">&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; MySQL Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-install&quot;&gt; (1) My SQL 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-basics&quot;&gt; (2) My SQL 기본 (작성중) &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="mysql" />
+      
+
+      
+        <summary type="html">MySQL Contents (1) My SQL 설치 (2) My SQL 기본 (작성중)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(1) My SQL 설치</title>
+      <link href="https://bobohy01.github.io/mysql-install" rel="alternate" type="text/html" title="(1) My SQL 설치" />
+      <published>2022-08-23T10:00:00+09:00</published>
+      <updated>2022-08-23T10:00:00+09:00</updated>
+      <id>https://bobohy01.github.io/mysql-install</id>
+      <content type="html" xml:base="https://bobohy01.github.io/mysql-install">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;My SQL을 다운 받기 위해, &lt;u&gt; &lt;a href=&quot;https://www.mysql.com/downloads/&quot; target=&quot;#&quot;&gt; My SQL 홈페이지&lt;/a&gt;&lt;/u&gt;에 접속합니다. 사이트 상단 Navigation bar에 있는 DOWNLOADS를 클릭하고, 하단에 MySQL Community (GPL) Downloads을 클릭합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_1.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;MySQL Community Server을 클릭하여 들어간 후 Recommended Download: 아래에 있는 MySQL Installer for Windows를 클릭하여 들어갑니다. 맨 아래에 있는 Windows (x86, 32-bit), MSI Installer의 오른쪽에 위치한 파란색 Download를 클릭합니다. 로그인 창이 나왔을 때, 로그인을 하여 설치해도 되고 No thanks, just start my download를 클릭하여 로그인 없이 설치해도 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_2.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;My SQL 설치 프로그램을 실행하면 Setup Type을 선택하게 되는데, 이때 Developer Default를 선택 후 Next를 클릭하여 넘어갑니다. 다음으로 Check Requirement 단계가 나오는데 아래 표시된 파일은 수동 설치 해야합니다. 하지만, 하지 않아도 My SQL을 설치 할 수 있기 때문에 Next 누르고 경고 창이 뜨면 Yes를 눌러 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_3.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Installation에서 Execute 클릭하여 My SQL 프로그램을 설치합니다. 모든 다운로드가 완료되어 초록색 체크 표시가 뜨면 Next를 클릭하여 다음으로 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_4.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Product Configuration은 Next를 클릭하여 넘어가고, Type and Networking에선 Port 번호를 입력해야 하는데 My SQL의 기본 Port 번호인 3306을 입력한 후 Next를 클릭하여 다음으로 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_5.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Authentication Method에선 인증을 위해 강력한 비밀번호 암호화 사용(use strong password encryption for authentication)을 선택한 후 Next를 클릭합니다. 이때 비밀번호를 설정하는 부분이 나오는데 비밀번호는 강하게 설정하고 꼭 기억해야합니다. 메모해두시는 것을 추천드립니다. 비밀번호를 설정했다면 Next를 클릭하여 다음으로 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_6.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Windows Service는 MySQL 서버를 Windows 서비스로 구성하는 부분으로 기본 설정 그대로 두고 Next를 클릭하여 다음으로 넘어갑니다. Apply Configuration에서 Execute를 클릭하여 설치 구성을 적용합니다. 설치 구성이 완료되어 초록색 체크 표시가 뜨면 Finish를 눌러 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_7.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;MySQL Router Configuration은 기본 설정을 그대로 두고 Finish를 클릭하여 다음으로 넘어갑니다. Product Configuration은 지금까지 설치하면서 구성된 제품설정을 모두 완료한 것이므로 Next를 클릭하여 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_8.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Connect To Server에서 My SQL 서버에 연결할 수 있습니다. 앞서 설정한 비밀번호를 입력한 후 Check를 눌러 연결 성공 여부를 확인합니다. 초록색으로 연결 성공이 뜨면 Next를 눌러 다음으로 넘어갑니다. Apply Configuration에선 필요한 기능 설치를 위해 Execute를 클릭하여 설치 구성을 적용합니다. 설치 구성이 완료되어 초록색 체크 표시가 뜨면 Finish를 눌러 넘어갑니다. Product Configuration은 지금까지 설치하면서 구성된 제품설정을 모두 완료한 것이므로 Next를 클릭하여 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_9.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;MySQL 설치가 완료되었습니다. 설치 확인을 위해 Start MySQL Workbench after setup만 선택한 후 Finish를 클릭하여 설치를 완료합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_10.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;MySQL이 실행되며 Welcome to MySQL Workbench 화면이 보이면 왼쪽 아래 Local instance MySQL80을 클릭합니다. 설정한 비밀번호를 입력 후 OK를 클릭합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_11.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래 사진과 같이 정상적으로 로그인 되어 화면이 뜨면 My SQL 설치가 완료된 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\post_images\mysql\mysql1_install_12.png&quot; width=&quot;100%&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; MySQL Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-install&quot;&gt; (1) My SQL 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-basics&quot;&gt; (2) My SQL 기본 (작성중) &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>bobohy01</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="mysql" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

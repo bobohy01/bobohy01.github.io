@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>데이터 분석</description>
+    <link>
+    https://bobohy01.github.io</link>
+    
+      
+      <item>
+        <title>(7) SQL 고득점 Kit - String, Date</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 26 Aug 2022 11:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_6</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_6</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(6) SQL 고득점 Kit - JOIN</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 26 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_5</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_5</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(2) My SQL 기본 (작성중)</title>
+        
+          <description>&lt;div class=&quot;table-of-contents-list&quot;&gt;
+    &lt;h2 class=&quot;table-of-contents-list&quot;&gt; MySQL Contents &lt;/h2&gt;
+    &lt;ul class=&quot;table-of-contents-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-install&quot;&gt; (1) My SQL 설치 &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;./mysql-basics&quot;&gt; (2) My SQL 기본 (작성중) &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;
+</description>
+        
+        <pubDate>Thu, 25 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/mysql-basics</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/mysql-basics</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(5) SQL 고득점 Kit - IS NULL</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 24 Aug 2022 11:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_4</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_4</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(4) SQL 고득점 Kit - GROUP BY</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 24 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_3</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(1) My SQL 설치</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 23 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/mysql-install</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/mysql-install</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(3) SQL 고득점 Kit - SUM &amp; MAX &amp; MIN</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Aug 2022 12:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_2</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(2) SQL 고득점 Kit - SELECT</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Aug 2022 11:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_1</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(1) SQL 고득점 Kit 소개</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/codingtest-pro_sql_0</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/codingtest-pro_sql_0</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(3) Crochet - 동백꽃 책갈피</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+취미로 만드는 코바늘! &lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 19 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/crochet-bookmark</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/crochet-bookmark</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(2) Crochet doll - 고래</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+취미로 만드는 코바늘 인형! &lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/crochet-whale</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/crochet-whale</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(1) Crochet doll - 마카롱</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;
+취미로 만드는 코바늘 인형! &lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 15 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/crochet-macaron</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/crochet-macaron</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(3) Jupyter Notebook 단축키</title>
+        
+          <description>&lt;h1 id=&quot;1-모든-단축키-설명&quot;&gt;1. 모든 단축키 설명&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 12 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/python-keyshortcut</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/python-keyshortcut</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(2) Jupyter Notebook 목차 활성화</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/python-contents</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/python-contents</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>(1) Python 3 설치</title>
+        
+          <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 08 Aug 2022 10:00:00 +0900</pubDate>
+        <link>
+        https://bobohy01.github.io/python-install</link>
+        <guid isPermaLink="true">https://bobohy01.github.io/python-install</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
