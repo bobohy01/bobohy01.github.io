@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://bobohy01.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bobohy01.github.io/" rel="alternate" type="text/html" /><updated>2022-08-29T12:36:01+09:00</updated><id>https://bobohy01.github.io/feed.xml</id><title type="html">Data Analysis</title><subtitle>데이터 분석</subtitle><entry><title type="html">(7) SQL 고득점 Kit - String, Date</title><link href="https://bobohy01.github.io/codingtest-pro_sql_6" rel="alternate" type="text/html" title="(7) SQL 고득점 Kit - String, Date" /><published>2022-08-26T11:00:00+09:00</published><updated>2022-08-26T11:00:00+09:00</updated><id>https://bobohy01.github.io/codingtest-pro_sql_6</id><content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_6">&lt;p&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://bobohy01.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bobohy01.github.io/" rel="alternate" type="text/html" /><updated>2022-08-29T12:46:23+09:00</updated><id>https://bobohy01.github.io/feed.xml</id><title type="html">Data Analysis</title><subtitle>데이터 분석</subtitle><entry><title type="html">(7) SQL 고득점 Kit - String, Date</title><link href="https://bobohy01.github.io/codingtest-pro_sql_6" rel="alternate" type="text/html" title="(7) SQL 고득점 Kit - String, Date" /><published>2022-08-26T11:00:00+09:00</published><updated>2022-08-26T11:00:00+09:00</updated><id>https://bobohy01.github.io/codingtest-pro_sql_6</id><content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_6">&lt;p&gt;&lt;br /&gt;
 해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
@@ -769,7 +769,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 정보를 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_2.JPG&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_2.png&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
