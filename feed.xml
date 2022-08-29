@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://bobohy01.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bobohy01.github.io/" rel="alternate" type="text/html" /><updated>2022-08-29T12:16:13+09:00</updated><id>https://bobohy01.github.io/feed.xml</id><title type="html">Data Analysis</title><subtitle>데이터 분석</subtitle><entry><title type="html">(7) SQL 고득점 Kit - String, Date</title><link href="https://bobohy01.github.io/codingtest-pro_sql_6" rel="alternate" type="text/html" title="(7) SQL 고득점 Kit - String, Date" /><published>2022-08-26T11:00:00+09:00</published><updated>2022-08-26T11:00:00+09:00</updated><id>https://bobohy01.github.io/codingtest-pro_sql_6</id><content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_6">&lt;p&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://bobohy01.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bobohy01.github.io/" rel="alternate" type="text/html" /><updated>2022-08-29T12:27:28+09:00</updated><id>https://bobohy01.github.io/feed.xml</id><title type="html">Data Analysis</title><subtitle>데이터 분석</subtitle><entry><title type="html">(7) SQL 고득점 Kit - String, Date</title><link href="https://bobohy01.github.io/codingtest-pro_sql_6" rel="alternate" type="text/html" title="(7) SQL 고득점 Kit - String, Date" /><published>2022-08-26T11:00:00+09:00</published><updated>2022-08-26T11:00:00+09:00</updated><id>https://bobohy01.github.io/codingtest-pro_sql_6</id><content type="html" xml:base="https://bobohy01.github.io/codingtest-pro_sql_6">&lt;p&gt;&lt;br /&gt;
 해당 문제는 프로그래머스(Programmers)사이트의 &lt;u&gt; &lt;a href=&quot;https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit&quot; target=&quot;#&quot;&gt; SQL 고득점 Kit &lt;/a&gt;&lt;/u&gt; 에서 제공됩니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
@@ -16,7 +16,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 이름이 Lucy, Ella, Pickle, Rogan, Sabrina, Mitty인 동물의 아이디와 이름, 성별 및 중성화 여부를 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_24.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_24.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -42,7 +42,7 @@
 
 &lt;p&gt;보호소에 돌아가신 할머니가 기르던 개를 찾는 사람이 찾아왔습니다. 이 사람이 말하길 할머니가 기르던 개는 이름에 ‘el’이 들어간다고 합니다. 동물 보호소에 들어온 동물 이름 중, 이름에 “EL”이 들어가는 개의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 이름 순으로 조회해주세요. 단, 이름의 대소문자는 구분하지 않습니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_25.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_25.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -68,7 +68,7 @@
 
 &lt;p&gt;보호소의 동물이 중성화되었는지 아닌지 파악하려 합니다. 중성화된 동물은 SEX_UPON_INTAKE 컬럼에 ‘Neutered’ 또는 ‘Spayed’라는 단어가 들어있습니다. 동물의 아이디와 이름, 중성화 여부를 아이디 순으로 조회하는 SQL문을 작성해주세요. 이때 중성화가 되어있다면 ‘O’, 아니라면 ‘X’라고 표시해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_26.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_26.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -97,7 +97,7 @@
 
 &lt;p&gt;입양을 간 동물 중, 보호 기간이 가장 길었던 동물 두 마리의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 기간이 긴 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_27.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_27.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -125,7 +125,7 @@
 
 &lt;p&gt;ANIMAL_INS 테이블에 등록된 모든 레코드에 대해, 각 동물의 아이디와 이름, 들어온 날짜를 조회하는 SQL문을 작성해주세요. 이때 시각(시-분-초)을 제외한 날짜(년-월-일)만 보여주고, 결과는 아이디 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_28.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_28.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -179,7 +179,7 @@
 
 &lt;p&gt;천재지변으로 인해 일부 데이터가 유실되었습니다. 입양을 간 기록은 있는데, 보호소에 들어온 기록이 없는 동물의 ID와 이름을 ID 순으로 조회하는 SQL문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_20.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_20.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -207,7 +207,7 @@
 
 &lt;p&gt;관리자의 실수로 일부 동물의 입양일이 잘못 입력되었습니다. 보호 시작일보다 입양일이 더 빠른 동물의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일이 빠른 순으로 조회해야합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_21.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_21.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -235,7 +235,7 @@
 
 &lt;p&gt;아직 입양을 못 간 동물 중, 가장 오래 보호소에 있었던 동물 3마리의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일 순으로 조회해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_22.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_22.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -264,7 +264,7 @@
 
 &lt;p&gt;보호소에서 중성화 수술을 거친 동물 정보를 알아보려 합니다. 보호소에 들어올 당시에는 중성화되지 않았지만, 보호소를 나갈 당시에는 중성화된 동물의 아이디와 생물 종, 이름을 조회하는 아이디 순으로 조회하는 SQL 문을 작성해주세요. 이때 중성화를 거치지 않은 동물은 성별 및 중성화 여부에 Intact, 중성화를 거친 동물은 Spayed 또는 Neutered라고 표시되어있습니다.(SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_23.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_23.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -328,7 +328,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중, 이름이 없는 채로 들어온 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_17.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_17.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -354,7 +354,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중, 이름이 있는 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_18.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_18.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -380,7 +380,7 @@
 
 &lt;p&gt;입양 게시판에 동물 정보를 게시하려 합니다. 동물의 생물 종, 이름, 성별 및 중성화 여부를 아이디 순으로 조회하는 SQL문을 작성해주세요. 이때 이름이 없는 동물의 이름은 “No name”으로 표시해 주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_19.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_19.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -433,7 +433,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 고양이와 개가 각각 몇 마리인지 조회하는 SQL문을 작성해주세요. 이때 고양이를 개보다 먼저 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_13.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_13.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -459,7 +459,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 이름 중 두 번 이상 쓰인 이름과 해당 이름이 쓰인 횟수를 조회하는 SQL문을 작성해주세요. 이때 결과는 이름이 없는 동물은 집계에서 제외하며, 결과는 이름 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_14.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_14.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -487,7 +487,7 @@
 
 &lt;p&gt;보호소에서는 몇 시에 입양이 가장 활발하게 일어나는지 알아보려 합니다. 09:00부터 19:59까지, 각 시간대별로 입양이 몇 건이나 발생했는지 조회하는 SQL문을 작성해주세요. 이때 결과는 시간대 순으로 정렬해야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_15.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_15.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -643,7 +643,7 @@
 
 &lt;p&gt;가장 최근에 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_9.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_9.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -667,7 +667,7 @@
 
 &lt;p&gt;동물 보호소에 가장 먼저 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_10.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_10.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -691,7 +691,7 @@
 
 &lt;p&gt;동물 보호소에 동물이 몇 마리 들어왔는지 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_11.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_11.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -715,7 +715,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물의 이름은 몇 개인지 조회하는 SQL 문을 작성해주세요. 이때 이름이 NULL인 경우는 집계하지 않으며 중복되는 이름은 하나로 칩니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_12.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_12.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -769,7 +769,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 정보를 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_2.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_2.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -794,7 +794,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 ANIMAL_ID 역순으로 보여주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_3.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_3.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -819,7 +819,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 아픈동물은 INTAKE_CONDITION이 Sick이고, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_4.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_4.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -845,7 +845,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 젊은 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 젊은 동물은 INTAKE_CONDITION이 Aged가 아닌 경우를 뜻하며, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_5.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_5.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -871,7 +871,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_6.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_6.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -896,7 +896,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름, 보호 시작일을 이름 순으로 조회하는 SQL문을 작성해주세요. 단, 이름이 같은 동물 중에서는 보호를 나중에 시작한 동물을 먼저 보여줘야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_7.png&quot; width=&quot;45%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_7.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -921,7 +921,7 @@
 
 &lt;p&gt;동물 보호소에 가장 먼저 들어온 동물의 이름을 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_8.png&quot; width=&quot;10%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_8.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
