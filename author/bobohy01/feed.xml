@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://bobohy01.github.io/author/bobohy01/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://bobohy01.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-08-28T21:30:14+09:00</updated>
+  <updated>2022-08-29T12:16:13+09:00</updated>
   <id>https://bobohy01.github.io/author/bobohy01/feed.xml</id>
 
   
@@ -1071,7 +1071,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 ANIMAL_ID 역순으로 보여주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_3.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_3.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -1096,7 +1096,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 아픈동물은 INTAKE_CONDITION이 Sick이고, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_4.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_4.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -1122,7 +1122,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 동물 중 젊은 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 젊은 동물은 INTAKE_CONDITION이 Aged가 아닌 경우를 뜻하며, 결과는 아이디 순으로 조회해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_5.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_5.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -1148,7 +1148,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름을 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_6.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_6.png&quot; width=&quot;35%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -1173,7 +1173,7 @@
 
 &lt;p&gt;동물 보호소에 들어온 모든 동물의 아이디와 이름, 보호 시작일을 이름 순으로 조회하는 SQL문을 작성해주세요. 단, 이름이 같은 동물 중에서는 보호를 나중에 시작한 동물을 먼저 보여줘야 합니다. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_7.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_7.png&quot; width=&quot;45%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
@@ -1198,7 +1198,7 @@
 
 &lt;p&gt;동물 보호소에 가장 먼저 들어온 동물의 이름을 조회하는 SQL 문을 작성해주세요. (SQL을 실행하면 다음과 같이 출력되어야 합니다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_8.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\post_images\codingtest\pro1_sql_8.png&quot; width=&quot;10%&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;풀이 방법&lt;/strong&gt;&lt;/li&gt;
